@@ -21,8 +21,6 @@ var offersPage = browser
 
 
 function fetchOffers(page) {
- console.log('fetchOffers');
-
  offersPage
   .waitForElement('css selector', '#job-list', 5000)
   .execute(extractFunctionBody(landingJobsScript))
@@ -31,8 +29,6 @@ function fetchOffers(page) {
 }
 
 function printOffers(offers) {
-  console.log('offers', offers);
-
   offers.forEach(function(offer) {
     var result = {
      'Company Name': offer.company_name,
@@ -42,6 +38,7 @@ function printOffers(offers) {
      };
 
      console.log(result);
+
   });
 }
 
