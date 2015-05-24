@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "wd": "^0.3.11"
+    "wd": "^0.3.11",
+    "xtend": "^4.0.0"
   }
 }
